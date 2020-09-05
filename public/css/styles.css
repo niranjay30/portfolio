@@ -1,0 +1,484 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background: #0E0E0E;
+  font-family: 'Fira Sans', sans-serif;
+  padding-top: 5rem;
+  color: #FFF;
+}
+
+/*------------------------------ NAVBAR ---------------------------------*/
+
+header{
+  border-bottom: 1px solid #262626;
+}
+
+.navbar{
+  background: #0E0E0E;
+  padding: 0;
+  line-height: 4rem !important;
+}
+
+.navbar-brand{
+  font-size: 1.8rem !important;
+  letter-spacing: 1px;
+  margin-right: 0;
+}
+
+.nav-link{
+  color: #FFF !important;
+  font-size: 1.03rem;
+  letter-spacing: 1px;
+  padding-left: 1.5rem !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(14,14,14);
+}
+
+@media (max-width: 1199.98px) {
+  .navbar{
+    line-height: 3.5rem !important;
+  }
+  body{
+    padding-top: 4.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  header{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .navbar{
+    padding: 8px 0;
+    line-height: 2.4rem !important;
+  }
+
+  .navbar-brand{
+    font-size: 1.5rem !important;
+  }
+
+  .nav-link{
+    font-size: 0.9rem;
+    padding-left: 0 !important;
+  }
+
+  .navbar li{
+    border-bottom: 1px solid #262626;
+    line-height: 2rem;
+  }
+
+  /* This is done because of browser compatibility issues with an+b formula */
+  .navbar li:last-child{
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  header{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .navbar li{
+    border-bottom: 1px solid #262626;
+  }
+
+  /* This is done because of browser compatibility issues with an+b formula */
+  .navbar li:last-child{
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  header{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar li{
+    border-bottom: 1px solid #262626;
+  }
+
+  /* This is done because of browser compatibility issues with an+b formula */
+  .navbar li:last-child{
+    border-bottom: none;
+  }
+}
+
+/*------------------------------ NAVBAR ENDS ---------------------------------*/
+
+
+
+/*------------------------------ HERO STARTS ---------------------------------*/
+
+.container-hero{
+  padding: 6.25rem 1.25rem 3.75rem !important;
+}
+
+.projects-hero{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.projects-hero .row{
+  padding-top: 3.75rem !important;
+  padding-bottom: 3.75rem !important;
+}
+
+.projects-hero p{
+  margin-bottom: 1.25rem;
+  padding-bottom: 0 !important;
+}
+
+.display-1,.display-2,.display-3,.display-4 {
+  letter-spacing: normal;
+}
+
+.display-4 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 1.6875rem !important;
+}
+
+@media (max-width: 1199.98px) {
+  .display-4 {
+    font-size: calc(1.475rem + 2.7vw);
+  }
+
+  .projects-hero .row{
+    padding-top: 3.375rem !important;
+    padding-bottom: 3.375rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .projects-hero .row{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.display-3 {
+  font-size: 5.55rem;
+  font-weight: 600;
+  line-height: 1.15;
+}
+
+@media (max-width: 1199.98px) {
+  .display-3 {
+    font-size: calc(1.575rem + 3.9vw);
+  }
+}
+
+hr {
+    border: none;
+    height: 0.6rem;
+    background-color: #FFF;
+    width: 15%;
+}
+
+.container-hero p, .container-contact p{
+  font-size: 2.1vmax;
+  font-weight: 300;
+}
+
+.projects-hero p{
+  font-size: 2vmax;
+  font-weight: 300;
+  padding-bottom: 1.25rem;
+}
+
+@media (max-width: 1199.98px) {
+  .container-hero{
+    padding: 5.625rem 1.125rem 3.375rem !important;
+  }
+
+  h1{
+    font-size: 4.7rem;
+  }
+}
+
+@media (max-width: 992px) {
+  body{
+    padding-top: 4rem;
+  }
+
+  hr {
+      height: 0.5rem;
+  }
+
+  .container-hero{
+    padding: 3rem 1rem !important;
+  }
+
+  h1{
+    font-size: 4rem;
+  }
+
+  main p{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  h1{
+    font-size: 3.4rem;
+  }
+
+  main p{
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1{
+    font-size: 2.6rem;
+  }
+
+  main p{
+    font-size: 1.2rem;
+  }
+}
+
+/*------------------------------ HERO ENDS ---------------------------------*/
+
+
+/*------------------------------ PROJECTS STARTS ---------------------------------*/
+
+.container-projects h2{
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0 !important;
+  margin-bottom: 1.875rem !important;
+}
+
+.project-description{
+  padding-bottom: 6.25rem !important;
+}
+
+.project-description h2{
+  font-family: "Playfair Display", serif;
+  margin-bottom: 0.9375rem;
+  font-size: 2.1rem;
+}
+
+.project-description p{
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 1199.98px) {
+  .project-description{
+    padding-bottom: 5.625rem !important;
+  }
+
+  .project-description h2{
+    font-size: 1.85rem;
+  }
+
+  .project-description p{
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .project-description{
+    padding-bottom: 3rem !important;
+  }
+
+  .project-description h2{
+    font-size: 1.65rem;
+  }
+
+  .project-description p{
+    font-size: 1rem;
+  }
+}
+
+.img-overlay{
+  position: relative;
+}
+
+.img-overlay .img-hover{
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.img-overlay .img-text{
+  color: #FFF;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  transform: translateY(10px);
+  transition: .5s ease;
+}
+
+.img-thumbnail {
+  max-width: 100%;
+  height: auto;
+}
+
+.img-thumbnail {
+  padding: .75rem;
+  background-color: transparent;
+  border: 1px solid #262626;
+}
+
+.img-thumbnail,.img-thumbnail+.img-hover {
+  border-radius: 1rem;
+}
+
+.img-overlay:hover .img-text{
+  opacity: 1;
+}
+
+.img-overlay:hover .img-hover {
+  opacity: 1;
+}
+
+.img-overlay:hover .img-text {
+  transform: translateY(0);
+}
+
+.border-dark {
+  border-color: #262626 !important;
+}
+
+.btn {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0;
+}
+
+.btn-outline-white {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-white:hover {
+  color: #170f18;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+.text-center{
+  /* margin-top: 6.25rem; */
+  margin-bottom: 6.25rem;
+}
+
+.border-1{
+  height: 0.3rem;;
+}
+
+.container-contact{
+  padding: 6.25rem 1.25rem;
+}
+
+
+/*------------------------------ PROJECTS ENDS ---------------------------------*/
+
+/*------------------------------ CONTACT STARTS ---------------------------------*/
+
+.mt-n6 {
+  margin-top: -5rem!important;
+}
+
+.px-3 {
+  padding-right: 1rem!important;
+  padding-left: 1rem!important;
+}
+
+.text-black {
+  color: #0e0e0e!important;
+}
+
+.contact-heading{
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+}
+
+.contact-details{
+  padding-left: 0.2rem;
+}
+
+.contact-details ul{
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-details ul li{
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  padding-top: 0.5rem !important;
+  padding-left: 0.5rem;
+}
+
+.social-icon{
+  text-decoration: none;
+}
+
+.instagram{
+  margin-left: 1rem;
+}
+
+/*------------------------------ CONTACT ENDS ---------------------------------*/
+
+/*------------------------------ FOOTER STARTS ---------------------------------*/
+
+.container-footer{
+  background: #F2F1F1;
+  padding: 1.25rem 1.25rem !important;
+  text-align: center;
+}
+
+footer p{
+  margin-bottom: 0;
+  color: #6e6e6e !important;
+  font-size: 0.85rem;
+  /* letter-spacing: 1px; */
+}
+
+.bg-white{
+  background-color: #FFF !important;
+}
+
+.text-muted{
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  letter-spacing: 1px;
+  color: #6e6e6e!important;
+  margin-bottom: 0;
+  display: inline;
+}
+
+@media (max-width: 1199.98px) {
+  footer p{
+    font-size: 0.7rem;
+  }
+}
+/*------------------------------ FOOTER ENDS ---------------------------------*/
