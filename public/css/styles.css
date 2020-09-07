@@ -13,10 +13,10 @@ body{
 
 header{
   border-bottom: 1px solid #262626;
+  background: #0E0E0E;
 }
 
 .navbar{
-  background: #0E0E0E;
   padding: 0;
   line-height: 4rem !important;
 }
@@ -134,11 +134,6 @@ header{
   padding-bottom: 3.75rem !important;
 }
 
-.projects-hero p{
-  margin-bottom: 1.25rem;
-  padding-bottom: 0 !important;
-}
-
 .display-1,.display-2,.display-3,.display-4 {
   letter-spacing: normal;
 }
@@ -187,15 +182,21 @@ hr {
     width: 15%;
 }
 
-.container-hero p, .container-contact p{
-  font-size: 2.1vmax;
+.container-hero p, .container-contact p, .projects-hero p{
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
+@media (min-width:768px) {
+  .container-hero p, .container-contact p, .projects-hero p{
+    font-size: 2rem;
+  }
+}
+
 .projects-hero p{
-  font-size: 2vmax;
-  font-weight: 300;
   padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0 !important;
 }
 
 @media (max-width: 1199.98px) {
@@ -283,7 +284,7 @@ hr {
     padding-bottom: 5.625rem !important;
   }
 
-  .project-description h2{
+  .project-description h2, .container-projects h2{
     font-size: 1.85rem;
   }
 
@@ -297,7 +298,7 @@ hr {
     padding-bottom: 3rem !important;
   }
 
-  .project-description h2{
+  .project-description h2, .container-projects h2{
     font-size: 1.65rem;
   }
 
@@ -386,9 +387,22 @@ hr {
   border-color: #fff;
 }
 
+@media (max-width: 768px) {
+  .btn{
+    padding: 0.6rem 1.25rem;
+    font-size: 0.75rem;
+  }
+}
+
 .text-center{
   /* margin-top: 6.25rem; */
   margin-bottom: 6.25rem;
+}
+
+@media (max-width:768px) {
+  .text-center{
+    margin-bottom: 4rem;
+  }
 }
 
 .border-1{
@@ -402,7 +416,53 @@ hr {
 
 /*------------------------------ PROJECTS ENDS ---------------------------------*/
 
+
 /*------------------------------ CONTACT STARTS ---------------------------------*/
+
+.container-contact-home{
+  background-color: #ff9285!important;
+  margin-bottom: 0;
+}
+
+.py-6 {
+  padding-top: 5rem!important;
+  padding-bottom: 5rem!important;
+}
+
+.container-contact-home h2{
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 2.25rem;
+  color: #262626;
+}
+
+@media (max-width:1200px) {
+  .container-contact-home h2 {
+    font-size: calc(1.35rem + 1.2vw);
+  }
+}
+
+.text-center-contact{
+  margin-top: 4rem;
+  /* margin-bottom: 6.25rem; */
+}
+
+@media (max-width:768px) {
+  .py-6-home {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+  }
+
+  .text-center-contact{
+    margin-top: 2rem;
+    /* margin-bottom: 6.25rem; */
+  }
+}
+
+/*------------------------------ CONTACT ENDS ---------------------------------*/
+
+/*------------------------------ CONTACT PAGE STARTS ---------------------------------*/
 
 .mt-n6 {
   margin-top: -5rem!important;
@@ -420,6 +480,18 @@ hr {
 .contact-heading{
   font-family: "Playfair Display", serif;
   font-size: 2rem;
+}
+
+@media (max-width:1200px) {
+  .contact-heading{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width:768px) {
+  .contact-heading{
+    font-size: 1.5rem;
+  }
 }
 
 .contact-details{
@@ -446,7 +518,50 @@ hr {
   margin-left: 1rem;
 }
 
-/*------------------------------ CONTACT ENDS ---------------------------------*/
+/*------------------------------ CONTACT PAGE ENDS ---------------------------------*/
+
+
+/*------------------------------ ABOUT STARTS ---------------------------------*/
+
+.container-about h2{
+  font-family: "Playfair Display", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.container-about p{
+  font-size: 1.25rem;
+}
+
+@media (max-width:1200px) {
+  .container-about h2{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .container-about p{
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width:768px) {
+  .container-about h2{
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .container-about p{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container-about h2{
+    font-size: 1.6rem;
+  }
+}
+
+/*------------------------------ ABOUT ENDS ---------------------------------*/
 
 /*------------------------------ FOOTER STARTS ---------------------------------*/
 
