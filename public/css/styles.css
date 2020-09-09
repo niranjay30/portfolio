@@ -532,6 +532,7 @@ hr {
 
 .container-about p{
   font-size: 1.25rem;
+  text-align: justify;
 }
 
 @media (max-width:1200px) {
